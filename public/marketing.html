@@ -376,18 +376,18 @@ footer.end { padding-block: 24px 50px; color: var(--muted); font-size: 13px; bor
           <div class="fine" style="font-size:15px">275 Montreal Street · Artist's impression</div></div>
           <div style="display:grid;gap:16px;justify-items:end"><div style="display:flex;align-items:center;gap:14px">${face(70)}${credit(18)}</div><span class="btn" style="font-size:20px;padding:18px 32px">${ad.btn}</span></div></div>`;
     }
-    const sm = w <= 336, tall = h / w > 1.6;
+    const sm = w <= 336, tall = h / w > 1.6, tiny = sm && h < 400;
     const pad = sm ? 14 : 72, hs = sm ? (h >= 600 ? 32 : 22) : (h >= 1900 ? 104 : 88), bs = sm ? 10 : 26, bp = sm ? "8px 12px" : "24px 44px", br = sm ? 15 : 40, fs = sm ? 8 : 18;
     const big = ad.angle.key === "agent";
     const faceSize = sm ? (big ? 44 : 30) : (big ? 160 : 96);
     return `<img class="bg" src="${img}" alt="" style="object-position:${tall ? "55% 50%" : "50% 50%"}"><div class="shadeTop"></div><div class="shade"></div>
       <div class="brand" style="position:absolute;top:${pad}px;left:0;right:0;text-align:center;font-size:${br}px">The Rise</div>
       <div style="position:absolute;left:${pad}px;right:${pad}px;bottom:${tall && !sm ? 260 : pad}px;display:grid;gap:${sm ? 8 : 30}px;text-align:center;justify-items:center">
-        <div class="fine" style="font-size:${sm ? 8 : 20}px">275 Montreal Street · Christchurch</div>
+        ${tiny ? "" : `<div class="fine" style="font-size:${sm ? 8 : 20}px">275 Montreal Street · Christchurch</div>`}
         <div class="h" style="font-size:${hs}px">${ad.head}</div>
         <div><span class="btn" style="font-size:${bs}px;padding:${bp}">${ad.btn}</span></div>
         <div style="display:flex;align-items:center;gap:${sm ? 6 : 18}px">${face(faceSize)}${credit(sm ? (big ? 10 : 9) : (big ? 28 : 22))}</div>
-        <div class="fine" style="font-size:${fs}px;opacity:.85">Artist's impression · Concept design · Licensed REAA 2008</div>
+        <div class="fine" style="font-size:${fs}px;opacity:.85">${tiny ? "Artist's impression" : "Artist's impression · Concept design · Licensed REAA 2008"}</div>
       </div>`;
   }
 
