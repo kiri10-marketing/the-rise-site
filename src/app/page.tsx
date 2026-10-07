@@ -13,7 +13,7 @@ function jsonLd() {
       name: site.name,
       description: site.description,
       url: site.url,
-      image: `${site.url}${hero.poster}`,
+      image: hero.poster,
       numberOfAccommodationUnits: 5,
       address: { "@type": "PostalAddress", streetAddress: site.address, addressLocality: "Christchurch", addressRegion: "Canterbury", addressCountry: "NZ" },
     },
@@ -39,7 +39,7 @@ export default function Home() {
         {/* Hero: drone film, morning to night */}
         <section id="top" className="relative h-[100svh] min-h-[560px] overflow-hidden bg-ink">
           <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="object-cover" />
-          <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} poster={hero.poster} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
+          <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
           <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(20,18,15,.55)_0%,rgba(20,18,15,0)_28%,rgba(20,18,15,0)_45%,rgba(20,18,15,.7)_100%)]" />
           <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-14 text-center text-white sm:pb-20">
             <p className="text-[0.8rem] uppercase tracking-[0.3em] text-white/90">{hero.eyebrow}</p>
@@ -151,7 +151,7 @@ export default function Home() {
               </dl>
             </div>
             <div className="reveal relative aspect-[4/5] lg:aspect-[4/5]">
-              <Image src="/media/greenery-still.jpg" alt="Artist's impression of The Rise with planting cascading from every deck" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+              <Image src={hero.dusk} alt="Artist's impression of The Rise with planting cascading from every deck" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
               <span className="render-tag">Artist's impression</span>
             </div>
           </div>
