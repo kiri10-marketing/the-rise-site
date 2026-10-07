@@ -9,18 +9,20 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - name: Download and convert
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick ffmpeg >/dev/null
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq ffmpeg >/dev/null)
+          command -v convert >/dev/null || sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq imagemagick >/dev/null
           grep -v '^#' scripts/media-sources.txt | while read -r path url; do
             [ -z "$path" ] && continue
             tmp=$(mktemp)
-            curl -fsSL "$url" -o "$tmp"
+            curl -fsSL --max-time 120 "$url" -o "$tmp"
             case "$path" in
               *.jpg) convert "$tmp" -resize '1920x1920>' -quality 85 "$path" ;;
-              *.mp4) ffmpeg -loglevel error -y -i "$tmp" -c:v libx264 -crf 24 -preset slow -pix_fmt yuv420p -an -movflags +faststart "$path" ;;
+              *.mp4) timeout 300 ffmpeg -nostdin -loglevel error -y -i "$tmp" -c:v libx264 -crf 24 -preset slow -pix_fmt yuv420p -an -movflags +faststart "$path" ;;
               *) mv "$tmp" "$path" ;;
             esac
           done
