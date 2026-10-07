@@ -6,6 +6,6 @@ public/media/ext-west-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWY
 public/media/ext-penthouse-deck.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_fa6f8a5e-bc22-4a10-9fcc-d18cfd1acb36.png
 public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_f436de16-181d-49b1-a3dc-aadd1a82101d.png
 public/media/balcony-view.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195025_29ee2c85-59ad-44e1-9802-c4ba59dac2e6.png
-public/media/hero-loop.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194918_3c620c1c-5379-4f86-b13f-da4b6af206a0.mp4
+# slowed to 0.6x with motion interpolation locally, so not re-fetched: public/media/hero-loop.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194918_3c620c1c-5379-4f86-b13f-da4b6af206a0.mp4
 public/media/wellness-pavilion.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195248_7189098f-2c3a-436d-91cf-77959080c954.png
 public/media/wellness-view.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195249_14255961-178a-4931-a52e-bfbb1e666ac9.png
