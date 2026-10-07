@@ -163,17 +163,17 @@ export const location = {
   heading: "The best of the central city, on foot.",
   body: "Montreal Street sits on the quieter north-west edge of the central city, close to Hagley Park, the Ōtākaro Avon River and the cafés, galleries and restaurants that have made central Christchurch one of the country's most liveable city centres.",
   places: [
-    { name: "Hagley Park", time: "[x] min walk" },
-    { name: "Ōtākaro Avon River", time: "[x] min walk" },
-    { name: "Christchurch Botanic Gardens", time: "[x] min walk" },
-    { name: "The Arts Centre", time: "[x] min walk" },
-    { name: "Christchurch Art Gallery", time: "[x] min walk" },
-    { name: "Riverside Market", time: "[x] min walk" },
-    { name: "Victoria Street dining", time: "[x] min walk" },
-    { name: "Te Pae Convention Centre", time: "[x] min walk" },
-    { name: "Christchurch Airport", time: "[x] min drive" },
-  ], // [PLACEHOLDER] walk and drive times
-  note: "Walk and drive times to be confirmed.",
+    { name: "Hagley Park", time: "6 min walk" },
+    { name: "Ōtākaro Avon River", time: "5 min walk" },
+    { name: "Christchurch Botanic Gardens", time: "6 min walk" },
+    { name: "The Arts Centre", time: "3 min walk" },
+    { name: "Christchurch Art Gallery", time: "6 min walk" },
+    { name: "Riverside Market", time: "6 min walk" },
+    { name: "Victoria Street dining", time: "14 min walk" },
+    { name: "Te Pae Convention Centre", time: "11 min walk" },
+    { name: "Christchurch Airport", time: "20 min drive" },
+  ], // OpenStreetMap routing from 275 Montreal St, 7 Oct 2026; airport is a free-flow estimate
+  note: "Approximate walking times from 275 Montreal Street. Airport drive time is outside peak traffic.",
 };
 
 export const agent = {

@@ -38,9 +38,14 @@ export default function Home() {
       <main>
         {/* Hero: drone film, morning to night */}
         <section id="top" className="relative h-[100svh] min-h-[560px] overflow-hidden bg-ink">
-          <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="object-cover" />
-          <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
-          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(20,18,15,.55)_0%,rgba(20,18,15,0)_28%,rgba(20,18,15,0)_45%,rgba(20,18,15,.7)_100%)]" />
+          {/* On phones the film sits in a wider frame at the top so more of the skyline shows; from sm up it fills the screen */}
+          <div className="absolute inset-x-0 top-[68px] h-[100vw] max-h-[58svh] sm:inset-0 sm:h-auto sm:max-h-none">
+            <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="object-cover" />
+            <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_bottom,rgba(31,28,25,0),#1f1c19)] sm:hidden" />
+          </div>
+          <div className="absolute inset-0 hidden sm:block bg-[linear-gradient(to_bottom,rgba(20,18,15,.55)_0%,rgba(20,18,15,0)_28%,rgba(20,18,15,0)_45%,rgba(20,18,15,.7)_100%)]" />
+          <div className="absolute inset-x-0 top-0 h-28 sm:hidden bg-[linear-gradient(to_bottom,rgba(20,18,15,.55),rgba(20,18,15,0))]" />
           <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-14 text-center text-white sm:pb-20">
             <p className="text-[0.8rem] uppercase tracking-[0.3em] text-white/90">{hero.eyebrow}</p>
             <h1 className="display h-xl mt-5 !text-white whitespace-pre-line">{hero.headline}</h1>
@@ -50,7 +55,7 @@ export default function Home() {
               <a href="#residences" className="btn btn-ghost-light hidden sm:inline-flex">Explore</a>
             </div>
           </div>
-          <span className="render-tag !left-auto right-3 !bottom-3">{hero.renderNote}</span>
+          <span className="render-tag !left-auto right-3 !bottom-3 hidden sm:block">{hero.renderNote}</span>
         </section>
 
         {/* Intro */}
