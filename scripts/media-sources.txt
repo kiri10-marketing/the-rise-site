@@ -1,0 +1,8 @@
+# local path <space> Higgsfield URL. Pushing a change here makes the Fetch media workflow download and commit the files.
+public/media/hero-poster.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194209_ca8fa642-ba46-4373-bdd9-4eed4fa2c62d.png
+public/media/greenery-still.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194257_d2706650-218b-4584-a07e-da841d68f731.png
+public/media/ext-east-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194601_339d0129-5b02-481f-b439-b777f1432023.png
+public/media/ext-west-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195025_5ee529ab-888d-46d4-a791-3c435bf08e1d.png
+public/media/ext-penthouse-deck.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_fa6f8a5e-bc22-4a10-9fcc-d18cfd1acb36.png
+public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_f436de16-181d-49b1-a3dc-aadd1a82101d.png
+public/media/balcony-view.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195025_29ee2c85-59ad-44e1-9802-c4ba59dac2e6.png

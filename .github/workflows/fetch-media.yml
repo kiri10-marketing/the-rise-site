@@ -1,0 +1,33 @@
+name: Fetch media
+on:
+  push:
+    branches: [main]
+    paths: [scripts/media-sources.txt]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and convert
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick ffmpeg >/dev/null
+          grep -v '^#' scripts/media-sources.txt | while read -r path url; do
+            [ -z "$path" ] && continue
+            tmp=$(mktemp)
+            curl -fsSL "$url" -o "$tmp"
+            case "$path" in
+              *.jpg) convert "$tmp" -resize '1920x1920>' -quality 85 "$path" ;;
+              *.mp4) ffmpeg -loglevel error -y -i "$tmp" -c:v libx264 -crf 24 -preset slow -pix_fmt yuv420p -an -movflags +faststart "$path" ;;
+              *) mv "$tmp" "$path" ;;
+            esac
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/media
+          git diff --cached --quiet || git commit -m "Fetch Higgsfield media"
+          git push

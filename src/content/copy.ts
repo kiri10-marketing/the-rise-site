@@ -30,8 +30,8 @@ export const hero = {
   status: "Five three-bedroom residences · One per floor · Rooftop wellness pavilion",
   cta: "Register interest",
   video: "https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_193405_6b5d7c95-f36f-4327-90a1-46f7bd725df5.mp4", // Higgsfield drone, morning to night
-  dusk: "https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_193312_bbf85751-1e50-4266-91eb-20bf43013f38.png",
-  poster: "https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_193213_99502311-52d6-4e57-b00e-8edd5889e24e.png", // Higgsfield planted morning still
+  dusk: "/media/greenery-still.jpg",
+  poster: "/media/hero-poster.jpg", // Higgsfield planted morning still
   imageAlt: "Artist's impression of The Rise, a five-level brick residence with planted balconies, seen from above",
   renderNote: "Artist's impression",
 };
@@ -154,7 +154,7 @@ export const arrival = {
   heading: "Gated, private, one park each.",
   body: "Arrive through a sliding gate to a private forecourt with one park for every residence, a separate pedestrian gate and a clearly expressed east entrance. A lift and enclosed stair serve every floor and the rooftop.",
   points: ["Sliding vehicle gate with intercom", "Five parks, one per residence", "Separate pedestrian gate", "Controlled lift to every floor"],
-  image: "/media/ext-east-aerial.jpg",
+  image: "/media/ext-east-aerial.jpg", // Higgsfield: closer crop with climbing plants
   imageAlt: "Artist's impression of the gated forecourt and east entrance of The Rise",
 };
 
@@ -212,6 +212,7 @@ export const form = {
 };
 
 export const footer = {
+  marketingLink: "Go-to-market plan, 100 ad concepts and traditional media",
   disclaimer:
     "All images are artist's impressions and indicative only, including surrounding buildings, planting and views. The Rise is a feasibility concept that has not been consented: heritage, planning, structural, fire and access matters are still to be resolved, and plans, areas, specifications and the number of residences may change without notice. Areas are gross. This website does not form part of any offer or contract. Buyers should make their own enquiries and seek independent legal advice.",
   developer: `Developer: ${site.developer}`,

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site, hero, intro, facts, residences, deck, rooftop, design, arrival, location, agent, form, footer } from "@/content/copy";
+import { site, hero, intro, facts, residences, deck, rooftop, design, arrival, location, agent, form, footer, nav } from "@/content/copy";
 import SiteHeader from "@/components/SiteHeader";
 import ResidenceTabs from "@/components/ResidenceTabs";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -13,7 +13,7 @@ function jsonLd() {
       name: site.name,
       description: site.description,
       url: site.url,
-      image: hero.poster,
+      image: `${site.url}${hero.poster}`,
       numberOfAccommodationUnits: 5,
       address: { "@type": "PostalAddress", streetAddress: site.address, addressLocality: "Christchurch", addressRegion: "Canterbury", addressCountry: "NZ" },
     },
@@ -235,6 +235,7 @@ export default function Home() {
           <div className="rule my-10" />
           <p className="text-sm leading-relaxed">{footer.disclaimer}</p>
           <p className="mt-4 text-sm">{footer.developer}</p>
+          <p className="mt-6 text-sm">© {new Date().getFullYear()} The Rise · <a className="underline underline-offset-4 hover:text-white" href={nav.brochure.href} target="_blank" rel="noopener">{nav.brochure.label}</a> · <a className="underline underline-offset-4 hover:text-white" href="/marketing">{footer.marketingLink}</a></p>
         </div>
       </footer>
     </>
