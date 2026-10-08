@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site, hero, intro, facts, residences, deck, rooftop, design, arrival, location, agent, form, footer, nav } from "@/content/copy";
+import { site, hero, intro, facts, residences, deck, wellness, design, arrival, location, agent, form, footer, nav } from "@/content/copy";
 import SiteHeader from "@/components/SiteHeader";
 import ResidenceTabs from "@/components/ResidenceTabs";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -14,7 +14,7 @@ function jsonLd() {
       description: site.description,
       url: site.url,
       image: `${site.url}${hero.poster}`,
-      numberOfAccommodationUnits: 5,
+      numberOfAccommodationUnits: 6,
       address: { "@type": "PostalAddress", streetAddress: site.address, addressLocality: "Christchurch", addressRegion: "Canterbury", addressCountry: "NZ" },
     },
     { "@context": "https://schema.org", "@type": "RealEstateAgent", name: `${agent.name}, Bayleys`, telephone: agent.phone, email: agent.email, areaServed: "Christchurch" },
@@ -115,22 +115,25 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Rooftop wellness, on dark garden olive */}
-        <section id="rooftop" className="on-dark scroll-mt-20 bg-olive py-24 sm:py-32">
+        {/* Residents' wellness at garden level, on dark garden olive */}
+        <section id="wellness" className="on-dark scroll-mt-20 bg-olive py-24 sm:py-32">
           <Centre className="reveal">
-            <p className="eyebrow">{rooftop.eyebrow}</p>
-            <h2 className="display h-lg mt-6">{rooftop.heading}</h2>
-            <p className="lede mt-6">{rooftop.body}</p>
+            <p className="eyebrow">{wellness.eyebrow}</p>
+            <h2 className="display h-lg mt-6">{wellness.heading}</h2>
+            <p className="lede mt-6">{wellness.body}</p>
           </Centre>
           <Stem dark />
-          <div className="reveal relative mx-auto aspect-[3/2] max-w-[1400px] sm:px-8">
-            <div className="relative h-full w-full">
-              <Image src={rooftop.image} alt={rooftop.imageAlt} fill sizes="(min-width:1400px) 1400px, 100vw" className="object-cover" />
+          <div className="reveal mx-auto grid max-w-[1400px] gap-4 sm:px-8 lg:grid-cols-[1.6fr_1fr]">
+            <div className="relative aspect-[3/2]">
+              <Image src={wellness.image} alt={wellness.imageAlt} fill sizes="(min-width:1024px) 60vw, 100vw" className="object-cover" />
               <span className="render-tag">Artist's impression</span>
+            </div>
+            <div className="relative hidden aspect-[3/2] lg:block lg:aspect-auto">
+              <Image src={wellness.image2} alt={wellness.image2Alt} fill sizes="35vw" className="object-cover" />
             </div>
           </div>
           <ul className="mx-auto mt-14 grid max-w-[1400px] gap-px px-6 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
-            {rooftop.features.map((f) => (
+            {wellness.features.map((f) => (
               <li key={f.name} className="reveal border-t border-sage/30 pt-6 pb-4 lg:px-4">
                 <p className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-[0.08em] text-white">{f.name}</p>
                 <p className="mt-2 text-sage">{f.detail}</p>
@@ -172,6 +175,7 @@ export default function Home() {
               <ul className="mt-8 grid gap-3">
                 {arrival.points.map((p) => <li key={p} className="flex gap-4"><span aria-hidden="true" className="mt-[0.85em] h-px w-6 shrink-0 bg-bronze" />{p}</li>)}
               </ul>
+              <p className="mt-6 text-sm">{arrival.note}</p>
             </div>
             <div className="reveal relative order-1 aspect-[3/2] lg:order-2">
               <Image src={arrival.image} alt={arrival.imageAlt} fill sizes="(min-width:1024px) 55vw, 100vw" className="object-cover" />

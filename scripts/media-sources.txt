@@ -1,11 +1,11 @@
 # local path <space> Higgsfield URL. Pushing a change here makes the Fetch media workflow download and commit the files.
-public/media/hero-poster.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194209_ca8fa642-ba46-4373-bdd9-4eed4fa2c62d.png
-public/media/greenery-still.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194257_d2706650-218b-4584-a07e-da841d68f731.png
-public/media/ext-east-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194601_339d0129-5b02-481f-b439-b777f1432023.png
-public/media/ext-west-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195025_5ee529ab-888d-46d4-a791-3c435bf08e1d.png
-public/media/ext-penthouse-deck.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_fa6f8a5e-bc22-4a10-9fcc-d18cfd1acb36.png
-public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195026_f436de16-181d-49b1-a3dc-aadd1a82101d.png
-public/media/balcony-view.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195025_29ee2c85-59ad-44e1-9802-c4ba59dac2e6.png
-# slowed to 0.6x with motion interpolation locally, so not re-fetched: public/media/hero-loop.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_194918_3c620c1c-5379-4f86-b13f-da4b6af206a0.mp4
-public/media/wellness-pavilion.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195248_7189098f-2c3a-436d-91cf-77959080c954.png
-public/media/wellness-view.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261007_195249_14255961-178a-4931-a52e-bfbb1e666ac9.png
+# 2026-10-08 six-residence update: files below were downloaded and processed locally (crops, 0.6x slow-down), so they are commented out and not re-fetched.
+# public/media/hero-poster.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190258_b515b721-5615-4780-a848-f5e9f92a5bfa.png
+# public/media/greenery-still.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190343_4d3dc7b4-125e-4d8a-9c9b-17b449f06f51.png
+# public/media/hero-loop.mp4 (first 6 s slowed to 0.6x) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190442_838897eb-f2a6-4502-bcfa-e6f7ef46e30d.mp4
+# public/media/ext-west-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190641_f22071b8-772e-44ab-9796-1787bc759736.png
+# public/media/ext-east-arrival.jpg and ext-east-aerial.jpg (closer crop) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191005_cfb8856c-bdfb-444c-8e28-8d57fad48647.png
+# public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191004_3c918f96-af82-4e19-a042-5daf7574cf71.png
+# public/media/penthouse-living.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190641_41189968-9ee3-4c9e-b159-bf0164ad351a.png
+# public/media/wellness-lounge.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191127_b4742ad3-c4da-43c8-ba11-74741bec69dc.png
+# public/media/wellness-sauna.jpg and plans/*.jpg come straight from the 8 Oct 2026 plans PDF.

@@ -1,6 +1,6 @@
 # The Rise, 275 Montreal Street
 
-Luxury pitch site for five full-floor residences (Bayleys, Angela Webb). Next.js + Tailwind.
+Luxury pitch site for six residences (five full floors plus a garden residence) (Bayleys, Angela Webb). Next.js + Tailwind.
 
 - All words: `src/content/copy.ts` ([DRAFT] = Claude-drafted copy, [PLACEHOLDER] = still to confirm).
 - `/marketing`: 100 ad concepts, go-to-market plan, traditional media mock-ups (`public/marketing.html`).

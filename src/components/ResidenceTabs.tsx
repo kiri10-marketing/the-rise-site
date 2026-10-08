@@ -27,10 +27,10 @@ export default function ResidenceTabs() {
 
       <div role="tabpanel" id={`panel-${tab.key}`} aria-labelledby={`tab-${tab.key}`} className="mt-12 grid gap-12 lg:grid-cols-[1.6fr_1fr] lg:items-center">
         <figure className="bg-paper p-3 sm:p-6">
-          <div className="relative aspect-[2460/1040] w-full">
+          <div className="relative aspect-[2000/981] w-full">
             <Image key={tab.plan} src={tab.plan} alt={`Concept floor plan, ${tab.name}`} fill sizes="(min-width:1024px) 60vw, 100vw" className="object-contain" />
           </div>
-          <figcaption className="mt-3 text-center text-sm text-body">Concept plan · west deck on the left · not to scale</figcaption>
+          <figcaption className="mt-3 text-center text-sm text-body">Concept plan · west on the left · not to scale</figcaption>
         </figure>
         <div>
           <p className="eyebrow">{tab.level}</p>
