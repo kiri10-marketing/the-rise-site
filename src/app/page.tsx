@@ -37,15 +37,16 @@ export default function Home() {
 
       <main>
         {/* Hero: planted morning still with a slow drift */}
-        <section id="top" className="relative h-[100svh] min-h-[560px] overflow-hidden bg-ink">
-          {/* On phones the image sits in a wider frame at the top so more of the skyline shows; from sm up it fills the screen */}
-          <div className="absolute inset-x-0 top-[68px] h-[100vw] max-h-[58svh] sm:inset-0 sm:h-auto sm:max-h-none">
+        <section id="top" className="relative overflow-hidden bg-ink pt-[68px] sm:h-[100svh] sm:min-h-[560px] sm:pt-0">
+          {/* On phones the image sits in a square frame under the header (more skyline) with the text below it; from sm up it fills the screen */}
+          <div className="relative h-[100vw] max-h-[58svh] overflow-hidden sm:absolute sm:inset-0 sm:h-auto sm:max-h-none">
             <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="hero-drift object-cover" />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_bottom,rgba(31,28,25,0),#1f1c19)] sm:hidden" />
+            <div className="absolute inset-x-0 bottom-0 h-1/4 bg-[linear-gradient(to_bottom,rgba(31,28,25,0),#1f1c19)] sm:hidden" />
+            <span className="render-tag sm:hidden">{hero.renderNote}</span>
           </div>
           <div className="absolute inset-0 hidden sm:block bg-[linear-gradient(to_bottom,rgba(20,18,15,.55)_0%,rgba(20,18,15,0)_28%,rgba(20,18,15,0)_45%,rgba(20,18,15,.7)_100%)]" />
           <div className="absolute inset-x-0 top-0 h-28 sm:hidden bg-[linear-gradient(to_bottom,rgba(20,18,15,.55),rgba(20,18,15,0))]" />
-          <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-14 text-center text-white sm:pb-20">
+          <div className="relative z-10 px-6 pb-14 pt-8 text-center text-white sm:absolute sm:inset-x-0 sm:bottom-0 sm:pb-20 sm:pt-0">
             <p className="text-[0.8rem] uppercase tracking-[0.3em] text-white/90">{hero.eyebrow}</p>
             <h1 className="display h-xl mt-5 !text-white whitespace-pre-line">{hero.headline}</h1>
             <p className="mx-auto mt-6 max-w-2xl text-[0.85rem] uppercase leading-relaxed tracking-[0.24em] text-white/90">{hero.status}</p>
