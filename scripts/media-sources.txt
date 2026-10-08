@@ -1,8 +1,8 @@
 # local path <space> Higgsfield URL. Pushing a change here makes the Fetch media workflow download and commit the files.
 # 2026-10-08 six-residence update: files below were downloaded and processed locally (crops, 0.6x slow-down), so they are commented out and not re-fetched.
-# public/media/hero-poster.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190258_b515b721-5615-4780-a848-f5e9f92a5bfa.png
 # (greenery-still removed 8 Oct: showed seven levels)
-# (hero-loop.mp4 removed 8 Oct: the film grows to seven levels)
+# public/media/hero-loop.mp4 (8 Oct, from Paul's approved render; first 6 s slowed to 0.6x) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_220004_ffe16d00-5fea-47ef-8592-e0a27be5ded3.mp4
+# public/media/hero-poster.jpg (8 Oct day frame) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_215506_e6a339fc-fb75-4900-85f6-681984abc4bc.png
 # (ext-west-aerial removed 8 Oct at Kiri's request)
 # public/media/ext-east-arrival.jpg and ext-east-aerial.jpg (closer crop) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191005_cfb8856c-bdfb-444c-8e28-8d57fad48647.png
 # public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191004_3c918f96-af82-4e19-a042-5daf7574cf71.png

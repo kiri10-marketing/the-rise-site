@@ -36,11 +36,12 @@ export default function Home() {
       <Reveal />
 
       <main>
-        {/* Hero: planted morning still with a slow drift */}
+        {/* Hero: drone film, morning to night */}
         <section id="top" className="relative overflow-hidden bg-ink pt-[68px] sm:h-[100svh] sm:min-h-[560px] sm:pt-0">
           {/* On phones the image sits in a square frame under the header (more skyline) with the text below it; from sm up it fills the screen */}
           <div className="relative h-[100vw] max-h-[58svh] overflow-hidden sm:absolute sm:inset-0 sm:h-auto sm:max-h-none">
-            <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="hero-drift object-cover" />
+            <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="object-cover" />
+            <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
             <div className="absolute inset-x-0 bottom-0 h-1/4 bg-[linear-gradient(to_bottom,rgba(31,28,25,0),#1f1c19)] sm:hidden" />
             <span className="render-tag sm:hidden">{hero.renderNote}</span>
           </div>
