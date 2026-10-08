@@ -29,7 +29,8 @@ export const hero = {
   headline: "A whole floor.\nYours alone.", // [DRAFT]
   status: "Six residences · Five full floors · A garden residence and residents' wellness",
   cta: "Register interest",
-  video: "/media/hero-loop.mp4", // Higgsfield drone of Paul's approved render, morning to night
+  video: "/media/hero-loop.mp4", // Higgsfield rising drone of Paul's approved render, sunset to night
+  filmPoster: "/media/hero-film-poster.jpg", // first frame of the film
   poster: "/media/hero-poster.jpg", // Higgsfield planted morning still, six levels, rooftop solar
   imageAlt: "Artist's impression of The Rise, a six-level brick residence with planted balconies, seen from above",
   renderNote: "Artist's impression",
