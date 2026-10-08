@@ -3,7 +3,7 @@
 # public/media/hero-poster.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190258_b515b721-5615-4780-a848-f5e9f92a5bfa.png
 # public/media/greenery-still.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190343_4d3dc7b4-125e-4d8a-9c9b-17b449f06f51.png
 # public/media/hero-loop.mp4 (first 6 s slowed to 0.6x) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190442_838897eb-f2a6-4502-bcfa-e6f7ef46e30d.mp4
-# public/media/ext-west-aerial.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190641_f22071b8-772e-44ab-9796-1787bc759736.png
+# public/media/ext-west-aerial.jpg (night variant, 8 Oct, replaces the daylight one) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_192935_aa6b4cdf-de97-4ddb-8b01-300b2fd98ba7.png
 # public/media/ext-east-arrival.jpg and ext-east-aerial.jpg (closer crop) https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191005_cfb8856c-bdfb-444c-8e28-8d57fad48647.png
 # public/media/balcony-penthouse.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_191004_3c918f96-af82-4e19-a042-5daf7574cf71.png
 # public/media/penthouse-living.jpg https://d8j0ntlcm91z4.cloudfront.net/user_3IQWYugObr2b97xnqTXaoi7FtNm/hf_20261008_190641_41189968-9ee3-4c9e-b159-bf0164ad351a.png

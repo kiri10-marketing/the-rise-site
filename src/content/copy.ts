@@ -44,7 +44,7 @@ export const intro = {
     "The Rise is six homes, one to a floor, in warm brick and cedar and softened with planting on every balcony. Five full-floor residences rise above a two-bedroom garden residence: a lift to your own floor, a 10-metre west balcony, three bedrooms, and a garden-level retreat of sauna, spa and gym shared by just six owners.",
   ],
   image: "/media/ext-west-aerial.jpg",
-  imageAlt: "Artist's impression of the west face of The Rise with a balcony on every upper level",
+  imageAlt: "Artist's impression of The Rise at dusk, its west balconies and garden lit",
 };
 
 export const facts = [
