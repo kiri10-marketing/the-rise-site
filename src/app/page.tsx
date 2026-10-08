@@ -65,13 +65,6 @@ export default function Home() {
             <h2 className="display h-lg mt-6">{intro.heading}</h2>
             <div className="mt-8 grid gap-5">{intro.body.map((p) => <p key={p} className="lede">{p}</p>)}</div>
           </Centre>
-          <Stem />
-          <div className="reveal relative mx-auto aspect-[3/2] w-full max-w-[1400px] sm:px-8">
-            <div className="relative h-full w-full">
-              <Image src={intro.image} alt={intro.imageAlt} fill sizes="(min-width:1400px) 1400px, 100vw" className="object-cover" />
-              <span className="render-tag">Artist's impression</span>
-            </div>
-          </div>
         </section>
 
         {/* Facts */}
