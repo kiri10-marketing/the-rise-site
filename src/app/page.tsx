@@ -36,12 +36,11 @@ export default function Home() {
       <Reveal />
 
       <main>
-        {/* Hero: drone film, morning to night */}
+        {/* Hero: planted morning still with a slow drift */}
         <section id="top" className="relative h-[100svh] min-h-[560px] overflow-hidden bg-ink">
-          {/* On phones the film sits in a wider frame at the top so more of the skyline shows; from sm up it fills the screen */}
+          {/* On phones the image sits in a wider frame at the top so more of the skyline shows; from sm up it fills the screen */}
           <div className="absolute inset-x-0 top-[68px] h-[100vw] max-h-[58svh] sm:inset-0 sm:h-auto sm:max-h-none">
-            <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="object-cover" />
-            <video className="hero-video absolute inset-0 h-full w-full object-cover" src={hero.video} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" />
+            <Image src={hero.poster} alt={hero.imageAlt} fill priority sizes="100vw" className="hero-drift object-cover" />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_bottom,rgba(31,28,25,0),#1f1c19)] sm:hidden" />
           </div>
           <div className="absolute inset-0 hidden sm:block bg-[linear-gradient(to_bottom,rgba(20,18,15,.55)_0%,rgba(20,18,15,0)_28%,rgba(20,18,15,0)_45%,rgba(20,18,15,.7)_100%)]" />
@@ -137,12 +136,12 @@ export default function Home() {
 
         {/* Design and materials */}
         <section className="py-24 sm:py-32">
-          <div className="mx-auto grid max-w-[1400px] gap-12 px-6 sm:px-8 lg:grid-cols-2 lg:items-center">
+          <div className="mx-auto max-w-[1100px] px-6 sm:px-8">
             <div className="reveal">
               <p className="eyebrow">{design.eyebrow}</p>
               <h2 className="display h-lg mt-6">{design.heading}</h2>
               <p className="lede mt-6">{design.body}</p>
-              <dl className="mt-10 grid grid-cols-2 gap-x-8 gap-y-6">
+              <dl className="mt-10 grid grid-cols-2 gap-x-8 gap-y-6 lg:grid-cols-4">
                 {design.materials.map((m) => (
                   <div key={m.name} className="border-t border-line pt-4">
                     <dt className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-[0.08em] text-ink">{m.name}</dt>
@@ -150,10 +149,6 @@ export default function Home() {
                   </div>
                 ))}
               </dl>
-            </div>
-            <div className="reveal relative aspect-[4/5] lg:aspect-[4/5]">
-              <Image src={hero.dusk} alt="Artist's impression of The Rise with planting cascading from every deck" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
-              <span className="render-tag">Artist's impression</span>
             </div>
           </div>
         </section>

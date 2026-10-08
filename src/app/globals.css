@@ -110,7 +110,9 @@ body {
 @keyframes marquee { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee { animation: none; flex-wrap: wrap; width: auto; } }
 
-@media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+@keyframes hero-drift { from { transform: scale(1); } to { transform: scale(1.08); } }
+.hero-drift { animation: hero-drift 24s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { .hero-drift { animation: none; } }
 
 /* Form fields: underline only, like the Graya register form, but large. */
 .field { display: grid; gap: 6px; }
